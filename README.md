@@ -1,2 +1,5 @@
 # TIL
-Today I Learned 정도는 해야지.. 하자 혜인아..
+> 📚Today I Learned (by.Hyein👩‍💻)
+
+## DevOps
+  - [CI/CD란?](./devops/cicd.md)
