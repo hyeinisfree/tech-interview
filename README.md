@@ -8,5 +8,6 @@
 ## Spring
 ### JPA
 - [ORM](./Spring/JPA/ORM.md)
+- [Spring Data JPA](./Spring/JPA/SpringDataJPA.md)
 ### Spring MVC
 - [Spring Web 계층](./Spring/SpringMVC/Spring%20Web%20계층.md)
