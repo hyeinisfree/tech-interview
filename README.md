@@ -2,8 +2,8 @@
 > 📚Today I Learned (by.Hyein👩‍💻)
 
 ## DevOps
-  - [CI/CD란?](./DevOps/CICD란?.md)
-  - [MSA란?](./DevOps/MSA란?.md)
+  - [CI/CD란?](./DevOps/CICD.md)
+  - [MSA란?](./DevOps/MSA.md)
 
 ## Spring
 ### Spring MVC
