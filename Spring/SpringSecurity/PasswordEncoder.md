@@ -26,57 +26,57 @@ public interface PasswordEncoder {
 
   - 위 4개의 PasswordEncoder는 Password를 encode할 때, 매번 임의의 salt를 생성해서 encode 하게 되어 있습니다.
   - 예를 들어 BCryptPasswordEncoder Class의 코드를 보면 아래와 같이 되어있습니다.
-```java
-/*
-* BCryptPasswordEncoder.encode() : 암호화
-*/
-public String encode(CharSequence rawPassword) {
+    ```java
+    /*
+    * BCryptPasswordEncoder.encode() : 암호화
+    */
+    public String encode(CharSequence rawPassword) {
 
-　　if (rawPassword == null) {
-　　　　throw new IllegalArgumentException("rawPassword cannot be null");
-　　}
+    　　if (rawPassword == null) {
+    　　　　throw new IllegalArgumentException("rawPassword cannot be null");
+    　　}
 
-　　String salt;
+    　　String salt;
 
-   if (random != null) {
-   　　salt = BCrypt.gensalt(version.getVersion(), strength, random);
-   } else {
-   　　salt = BCrypt.gensalt(version.getVersion(), strength);
-   }
-   return BCrypt.hashpw(rawPassword.toString(), salt);
-}
+      if (random != null) {
+      　　salt = BCrypt.gensalt(version.getVersion(), strength, random);
+      } else {
+      　　salt = BCrypt.gensalt(version.getVersion(), strength);
+      }
+      return BCrypt.hashpw(rawPassword.toString(), salt);
+    }
 
-/**
-* BCrypt.gensalt() : Salt 생성
-*/
-public static String gensalt(String prefix, int log_rounds, SecureRandom random) throws IllegalArgumentException {
+    /**
+    * BCrypt.gensalt() : Salt 생성
+    */
+    public static String gensalt(String prefix, int log_rounds, SecureRandom random) throws IllegalArgumentException {
 
-　StringBuilder rs = new StringBuilder();
-　byte rnd[] = new byte[BCRYPT_SALT_LEN]; // 16byte(128bit) 크기의 Salt 생성
+    　StringBuilder rs = new StringBuilder();
+    　byte rnd[] = new byte[BCRYPT_SALT_LEN]; // 16byte(128bit) 크기의 Salt 생성
 
-  if (!prefix.startsWith("$2") || (prefix.charAt(2) != 'a' && prefix.charAt(2) != 'y' && prefix.charAt(2) != 'b')) {
-      throw new IllegalArgumentException ("Invalid prefix");
-  }
+    if (!prefix.startsWith("$2") || (prefix.charAt(2) != 'a' && prefix.charAt(2) != 'y' && prefix.charAt(2) != 'b')) {
+        throw new IllegalArgumentException ("Invalid prefix");
+    }
 
-  if (log_rounds < 4 || log_rounds > 31) {
-      throw new IllegalArgumentException ("Invalid log_rounds");
-  }
+    if (log_rounds < 4 || log_rounds > 31) {
+        throw new IllegalArgumentException ("Invalid log_rounds");
+    }
 
-　random.nextBytes(rnd);
+    　random.nextBytes(rnd);
 
-　rs.append("$2");
-　rs.append(prefix.charAt(2));
-　rs.append("$");
-　if (log_rounds < 10)
-      rs.append("0");
+    　rs.append("$2");
+    　rs.append(prefix.charAt(2));
+    　rs.append("$");
+    　if (log_rounds < 10)
+        rs.append("0");
 
-  rs.append(log_rounds);
-  rs.append("$");
-  encode_base64(rnd, rnd.length, rs);
+    rs.append(log_rounds);
+    rs.append("$");
+    encode_base64(rnd, rnd.length, rs);
 
-  return rs.toString();
-}
-```
+    return rs.toString();
+    }
+    ```
 
 ### BCryptPasswordEncoder
 - `BCrypt 해시 함수`를 사용해 비밀번호를 해시하는 PasswordEncoder입니다. 
@@ -98,8 +98,7 @@ public BCryptPasswordEncoder(BCryptVersion version, int strength, SecureRandom r
 }
 ```
 
-아래는 BCryptPasswordEncoder의 강도를 16으로 설정한 예제입니다.
-
+- 아래는 BCryptPasswordEncoder의 강도를 16으로 설정한 예제입니다.
 ```java
 // Create an encoder with strength 16
 BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(16);
@@ -108,9 +107,9 @@ assertTrue(encoder.matches("myPassword", result));
 ```
 
 ### Argon2PasswordEncoder
-
-`Argon2 해시 함수` 를 사용해 비밀번호를 해시하는 PasswordEncoder입니다. Argon2는 Password Hasing Competition의 우승자(?)로 Password Cracking을 방지하기 위해 다른 PasswordEncoder와 마찬가지로 의도적으로 느리게 실행되도록 설정되어 있습니다. 마찬가지로 1개의 비밀번호를 확인하는데 약 1초 정도가 걸리도록 속도를 조정해줘야 합니다.
-
+- `Argon2 해시 함수` 를 사용해 비밀번호를 해시하는 PasswordEncoder입니다. 
+- Argon2는 Password Hasing Competition의 우승자(?)로 Password Cracking을 방지하기 위해 다른 PasswordEncoder와 마찬가지로 의도적으로 느리게 실행되도록 설정되어 있습니다. 
+- 마찬가지로 1개의 비밀번호를 확인하는데 약 1초 정도가 걸리도록 속도를 조정해줘야 합니다.
 ```java
 // Create an encoder with all the defaults
 Argon2PasswordEncoder encoder = new Argon2PasswordEncoder();
