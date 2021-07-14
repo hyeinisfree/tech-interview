@@ -28,4 +28,5 @@
 - [assertJ](./Spring/Test/assertJ.md)
 
 ## Python
+- [자료형](./Python/자료형.md)
 - [입출력](./Python/입출력.md)
