@@ -21,6 +21,7 @@
 ### Spring Security
 - [PasswordEncoder](./Spring/SpringSecurity/PasswordEncoder.md)
 - [Validation](./Spring/SpringSecurity/Validation.md)
+- [JWT](./Spring/SpringSecurity/JWT.md)
 
 ### Test
 - [JUnit](./Spring/Test/JUnit.md)
