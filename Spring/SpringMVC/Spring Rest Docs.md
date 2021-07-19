@@ -8,3 +8,5 @@
 
 - 공식 문서 : [https://docs.spring.io/spring-restdocs/docs/2.0.5.RELEASE/reference/html5/#getting-started](https://docs.spring.io/spring-restdocs/docs/2.0.5.RELEASE/reference/html5/#getting-started)
 - 공식 가이드 : [https://spring.io/guides/gs/testing-restdocs/](https://spring.io/guides/gs/testing-restdocs/)
+- [https://gaemi606.tistory.com/entry/Spring-Boot-REST-Docs-적용하기](https://gaemi606.tistory.com/entry/Spring-Boot-REST-Docs-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
+- [https://velog.io/@max9106/Spring-Spring-rest-docs를-이용한-문서화](https://velog.io/@max9106/Spring-Spring-rest-docs%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%AC%B8%EC%84%9C%ED%99%94)
