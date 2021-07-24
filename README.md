@@ -1,11 +1,9 @@
 # TIL
 > 📚Today I Learned (by.Hyein👩‍💻)
 
----
 ## Server
   - [JWT란?](./Server/JWT.md)
 
----
 ## DevOps
   - [CI/CD란?](./DevOps/CICD.md)
   - [MSA란?](./DevOps/MSA.md)
@@ -35,7 +33,6 @@
 - [MockMvc](./Spring/Test/MockMvc.md)
 - [assertJ](./Spring/Test/assertJ.md)
 
----
 ## Python
 - [자료형](./Python/자료형.md)
 - [입출력](./Python/입출력.md)
