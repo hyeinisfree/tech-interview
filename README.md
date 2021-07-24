@@ -1,6 +1,9 @@
 # TIL
 > 📚Today I Learned (by.Hyein👩‍💻)
 
+## Server
+  - [JWT란?](./Server/JWT.md)
+
 ## DevOps
   - [CI/CD란?](./DevOps/CICD.md)
   - [MSA란?](./DevOps/MSA.md)
