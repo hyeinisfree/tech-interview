@@ -3,6 +3,7 @@
 
 ## Server
   - [JWT란?](./Server/JWT.md)
+  - [REST API란?](./Server/RESTAPI.md)
 
 ## DevOps
   - [CI/CD란?](./DevOps/CICD.md)
