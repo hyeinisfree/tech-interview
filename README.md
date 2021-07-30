@@ -4,6 +4,7 @@
 ## Server
   - [JWT란?](./Server/JWT.md)
   - [REST API란?](./Server/RESTAPI.md)
+  - [HATEOAS란?](./Server/HATEOAS.md)
 
 ## DevOps
   - [CI/CD란?](./DevOps/CICD.md)
