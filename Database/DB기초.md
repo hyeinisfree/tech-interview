@@ -9,3 +9,10 @@
 - **Consistency(일관성)**: 트랜잭션이 실행을 성공적으로 완료하면 언제나 일관성 있는 데이터베이스 상태로 유지하는 것을 의미.
 - **Isolation(고립성)**: 트랜잭션을 수행 시 다른 트랜잭션의 연산 작업이 끼어들지 못하도록 보장하는 것을 의미. 이는 트랜잭션 밖에 있는 어떠한 연산도 트랜잭션 내 중간 단계의 데이터를 볼 수 없음을 의미한다.
 - **Durability(지속성)**: 성공적으로 수행된 트랜잭션은 영원히 반영되어야 함을 의미. 시스템 문제, DB 일관성 체크 등을 하더라도 유지되어야 함을 의미. 전형적으로 모든 트랜잭션은 로그로 남고 시스템 장애 발생 전 상태로 되돌릴 수 있다.
+
+## INDEX
+## JOIN
+
+### 📗참고
+- https://docs.google.com/spreadsheets/d/1rtrw5c8VjNxaTLTmarxN8wlY-n_AaXuWDtcGpzvDqWc/edit?usp=sharing
+- https://mangkyu.tistory.com/96
