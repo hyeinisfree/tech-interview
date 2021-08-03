@@ -20,6 +20,7 @@
 - [Domain](./Spring/JPA/Domain.md)
 - [JpaRepository](./Spring/JPA/JpaRepository.md)
 - [JPA 어노테이션](./Spring/JPA/JPA%20어노테이션.md)
+- [영속성 관리](./Spring/JPA/영속성%20관리.md)
 
 ### Spring MVC
 - [Spring Web 계층](./Spring/SpringMVC/Spring%20Web%20계층.md)
