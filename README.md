@@ -1,18 +1,30 @@
-# TIL
+# 📝 TIL
 > 📚Today I Learned (by.Hyein👩‍💻)
 
-## Server
-  - [JWT란?](./Server/JWT.md)
-  - [REST API란?](./Server/RESTAPI.md)
-  - [HATEOAS란?](./Server/HATEOAS.md)
+## 📌 Network
+- [REST API란?](./Network/RESTAPI.md)
+- [HATEOAS란?](./Network/HATEOAS.md)
 
-## DevOps
-  - [CI/CD란?](./DevOps/CICD.md)
-  - [MSA란?](./DevOps/MSA.md)
-  - [Docker란?](./DevOps/Docker.md)
+## 📌 Operating System
 
-## Spring
 
+## 📌 Design Pattern
+
+## 📌 Database
+
+## 📌 Data Structure
+
+## 📌 Algorithm
+
+## 📌 Java
+
+## 📌 Javascript
+
+## 📌 Python
+- [자료형](./Python/자료형.md)
+- [입출력](./Python/입출력.md)
+
+## 📌 Spring
 ### JPA
 - [ORM](./Spring/JPA/ORM.md)
 - [JPA, Hibernate, Spring Data JPA의 차이점](./Spring/JPA/차이점.md)
@@ -23,24 +35,26 @@
 - [JPA 설정](./Spring/JPA/JPA%20설정.md)
 - [영속성 관리](./Spring/JPA/영속성%20관리.md)
 
-### Spring MVC
+### 📌 Spring MVC
 - [Spring Web 계층](./Spring/SpringMVC/Spring%20Web%20계층.md)
 - [Spring Rest Docs](./Spring/SpringMVC/Spring%20Rest%20Docs)
 
-### Spring Security
+### 📌 Spring Security
 - [PasswordEncoder](./Spring/SpringSecurity/PasswordEncoder.md)
 - [Validation](./Spring/SpringSecurity/Validation.md)
 - [JWT](./Spring/SpringSecurity/JWT.md)
 
-### Test
+### 📌 Test
 - [JUnit](./Spring/Test/JUnit.md)
 - [MockMvc](./Spring/Test/MockMvc.md)
 - [assertJ](./Spring/Test/assertJ.md)
 
-## Node.js
+## 📌 Node.js
 - [Session으로 로그인 구현하기](./Node.js/Session.md)
 - [JWT로 로그인 구현하기](./Node.js/JWT.md)
 
-## Python
-- [자료형](./Python/자료형.md)
-- [입출력](./Python/입출력.md)
+## 📌 ETC
+- [JWT란?](./ETC/JWT.md)
+- [CI/CD란?](./ETC/CICD.md)
+- [MSA란?](./ETC/MSA.md)
+- [Docker란?](./ETC/Docker.md)
