@@ -19,6 +19,7 @@
 ## 📌 Java
 - [JVM, JRE, JDK](./Java/JVM.md)
 - [Short Circuit](./Java/Short-Circuit.md)
+- [SOLID](./Java/SOLID.md)
 
 ## 📌 Javascript
 
