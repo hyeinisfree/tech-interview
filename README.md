@@ -26,8 +26,9 @@
 ### Python
 - [자료형](./Python/자료형.md)
 - [입출력](./Python/입출력.md)
-- [매직 메소드 (Magic Method)](./Python/매직%20메소드.md)
+- [매직 메소드(Magic Method)](./Python/매직%20메소드.md)
 - [Iterable과 Iterator](./Python/Iterable과%20Iterator.md)
+- [Call By Assignment](./Python/CallByAssignment.md)
 
 ## 📌 Framework
 ### Spring
