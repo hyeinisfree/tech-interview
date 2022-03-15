@@ -1,3 +1,4 @@
+# Iterable과 Iterator
 ## Iterable 객체
 - 반복 가능한 객체이다.
 - 대표적으로 iterable한 타입 - list, dict, set, str, bytes, tuple, range

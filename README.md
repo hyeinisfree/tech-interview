@@ -11,6 +11,11 @@
 ### Data Structure
 
 ### Algorithm
+- [정렬(Sorting)](./Algorithm/정렬.md)
+- [이진 탐색(Binary Search)](./Algorithm/이진%20탐색.md)
+- [동적 계획법(Dynamic Programming)](./Algorithm/동적%20계획법.md)
+- [백트래킹(BackTracking)](./Algorithm/백트래킹.md)
+- [그래프(Graph)](./Algorithm/그래프.md)
 
 ## 📌 Language
 ### Java
@@ -65,4 +70,3 @@
 - [CI/CD란?](./ETC/CICD.md)
 - [MSA란?](./ETC/MSA.md)
 - [Docker란?](./ETC/Docker.md)
-
